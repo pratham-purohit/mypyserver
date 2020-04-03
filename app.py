@@ -13,4 +13,4 @@ def about():
     return render_template("about.html")
 
 if __name__ == "main":
-    app.run(DEBUG=True)
+    app.run(debug=True)
