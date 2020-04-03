@@ -1,0 +1,48 @@
+html, body {
+    background-color: beige;
+    padding: 0;
+    margin: 0;
+}
+header{
+    text-align: center;
+    display: block;
+    padding: 50px 20px;
+    background-color: aquamarine;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+}
+
+@keyframes typin {
+    from {width: 0}
+    to {width: 100%}
+}
+
+@keyframes blinketh {
+    0% {opacity: 0;}
+    50%{opacity: 1;}
+    60% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+header > div > h1 {
+    display: inline-block;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 4rem;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #595959;
+    animation: typin 2.2s steps(32, end);
+    margin: 0 auto;
+}
+
+header > div > svg {
+    position: absolute;
+    color: 595959;
+    opacity: 0;
+    animation: blinketh 1.06s infinite;
+    vertical-align: top;
+}
+
+header > div {
+    display: inline-block;
+}
